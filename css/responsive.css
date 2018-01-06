@@ -24,7 +24,7 @@
 }
 /* xs */
 @media (max-width: 767px) {
-	header[role="header"]{ padding:8% 0;}
+	header[role="header"]{ padding:0 0;}
 	header[role="header"] nav ul{ padding-top:20%}
 	header[role="header"] nav ul > li{ font-size:30px}
 	header[role="header"] nav ul > li > a{ line-height:55px}

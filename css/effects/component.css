@@ -6,7 +6,7 @@
 }
 
 .grid-lod li {
-	display: block;
+	display: flex;
 /*	float: left;*/
 /*	padding: 1em 0 1em 0;*/
 /*	width: 33%;*/

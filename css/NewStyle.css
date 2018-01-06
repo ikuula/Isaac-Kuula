@@ -77,10 +77,6 @@ body {
 	margin: 0;
 }
 
-header {
-	padding: 0;
-	margin: 0;
-}
 
 .row {
 	padding: 0;
@@ -160,7 +156,25 @@ article header h2 {
 	/*	border-bottom: solid 3px;*/
 }
 
+header[role="header"]{ 
+display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+	padding:3em 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
+	background: white;
+}
+h1, nav[role="header-nav"]{
+	display:flex;
+	
+}
 
+#main{
+	padding-top: 12em;
+}
 
 /****** MEDIA QUERIES *********/
 
@@ -173,8 +187,7 @@ article header h2 {
 		margin: 0 0 -3px 0;
 	}
 
-	#foot,
-	div.container{
+	#foot{
 		padding: 0 2em;
 	}
 	.work-details{
@@ -186,5 +199,5 @@ article header h2 {
 	body{
 		padding: 0;
 	}
-
+	header[role="header"]{ padding:2em;}
 }
